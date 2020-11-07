@@ -1,0 +1,99 @@
+html {
+     box-sizing: border-box;
+     font-family: 'Space Grotesk', sans-serif;
+     background-color: #2d3748;
+}
+*,
+*::after,
+*::before {
+     box-sizing: inherit;
+}
+h1, h2, h3 {
+     margin: 0;
+}
+label {
+     margin-bottom: 20px;
+     display: block;
+     font-size: 20px;
+     text-align: center;
+}
+input, select {
+     width: 100%;
+     margin: auto;
+     margin-bottom: 20px;
+     padding: 10px 25px;
+     display: block;
+     border-radius: 5px;
+}
+.container {
+     background-color: #ffffff;
+     padding: 30px;
+}
+.title {
+     font-size: 35px;
+     font-weight: 600;
+     margin-bottom: 40px;
+     text-align: center;
+}
+.btn {
+     width: 100%;
+     display: block;
+     margin: auto;
+     margin-bottom: 80px;
+     color: #ffffff;
+     text-align: center;
+     padding: 10px 25px;
+     background-color: #1a202c;
+     cursor: pointer;
+     border: none;
+     text-transform: uppercase;
+     font-weight: 600;
+     border-radius: 5px;
+}
+@media only screen and (min-width: 768px) {
+     .container {
+          margin: 0 auto;
+          height: 100vh;
+          max-width: 768px;
+     }
+     label {
+          text-align: left;
+     }
+     input {
+          display: inline-block;
+          margin-right: 10px;
+          width: 30%;
+     }
+     .btn {
+          display: inline-block;
+          width: 25%;
+     }
+     .fields {
+          display: flex;
+          justify-content: space-between;
+     }
+     .field {
+          flex-basis: calc(33.3% - 15px);
+     }
+     
+}
+.mensaje {
+     margin-top: 20px;
+     font-size: 15px;
+     text-align: center;
+     width: 100%;
+     color: #ffffff;
+     text-transform: uppercase;
+     font-weight: 600;
+     padding: 20px;
+}
+.error {
+     background-color: #e53e3e;
+}
+.success {
+     background-color: #2f855a;
+}
+.disabled {
+     opacity: 80%;
+     cursor: not-allowed;
+}
